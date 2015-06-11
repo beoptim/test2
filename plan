@@ -1,0 +1,25 @@
+백인우 조장님
+프로그램 코딩할 개요를 짜고 시작하도록 하겠습니다.
+
+크게 세개의 파일로 나누어서 진행하겠습니다.
+각 파일별로 들어갈 funtion과 같이 정리하면
+
+1. 메인프로그램(test.py)
+	print Alignment("GCTGATATAGCT", "GGGTGATTAGCT") #__str__을 사용하여 바로 프린트 가능하게 만들어봅시다.
+
+2. 디스턴스메트릭스(distance.py)
+	initializing #s, t 두개의 시퀀스를 받아서 처리합니다. 입력이 없을땐 문제에 나오는 두 시퀀스로 초기값을 잡습니다.
+		s, t #서열 두개
+		n,m #각각의 서열 길이
+		d = {} #distance matrix
+	setMatrix() #메트릭스 만들어주는 명령어
+
+3. 백트랙킹(alignment.py)
+	initializing #distance로 initializing하기 위해 __init__사용하지 않음
+	setBacktrackingMatrix() backtracking matrix만들어주는 명령어
+	printalignment() #recurssive function, 백트랙킹 끝나면 출력
+	__str__(self) #recurssive function을 호출하여 프린트 시킴
+
+입니다.
+
+우선 템플릿을 만들어서 올립니다.
