@@ -40,3 +40,6 @@ class Distance():
                    self.d[i,j-1]+1,
                    self.d[i-1,j-1]+self.Match(self.s[i-1],self.t[j-1])
                )
+	def getDistance(self):
+		self.setMatrix()
+		return self.d[(self.n),(self.m)]
