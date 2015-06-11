@@ -2,10 +2,10 @@
 class Distance():
 
    def __init__(self,s,t):
-self.s = s
-self.t = t
-self.n = len(self.s)
-self.m = len(self.t)
+      self.s = s
+      self.t = t
+      self.n = len(self.s)
+      self.m = len(self.t)
 
    def Match(self,s,t):
        if (s==t):
